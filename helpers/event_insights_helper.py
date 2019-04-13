@@ -246,7 +246,7 @@ class EventInsightsHelper(object):
             'average_cargo_points': float(cargo_points) / opportunities_1x,
             'rocket_rp_achieved': [rocket_rp_achieved, opportunities_1x, 100.0 * float(rocket_rp_achieved) / opportunities_1x],
             'climb_rp_achieved': [climb_rp_achieved, opportunities_1x, 100.0 * float(climb_rp_achieved) / opportunities_1x],
-            'unicorn_matches': [unicorn_matches, opportunities_1x, 100.0 * float(unicorn_matches) / opportunities_1x],
+            'unicorn_matches': [unicorn_matches, finished_matches, 100.0 * float(unicorn_matches) / finished_matches],
             'average_win_score': float(winning_scores) / finished_matches,
             'average_win_margin': float(win_margins) / finished_matches,
             'average_score': float(total_scores) / opportunities_1x,
@@ -468,7 +468,7 @@ class EventInsightsHelper(object):
             'high_score': high_score,  # [score, match key, match name]
             'auto_quest_achieved': [auto_quest_achieved, opportunities_1x, 100.0 * float(auto_quest_achieved) / opportunities_1x],
             'face_the_boss_achieved': [face_the_boss_achieved, opportunities_1x, 100.0 * float(face_the_boss_achieved) / opportunities_1x],
-            'unicorn_matches': [unicorn_matches, opportunities_1x, 100.0 * float(unicorn_matches) / opportunities_1x],
+            'unicorn_matches': [unicorn_matches, finished_matches, 100.0 * float(unicorn_matches) / finished_matches],
         }
 
         return event_insights
@@ -647,7 +647,7 @@ class EventInsightsHelper(object):
             'rotor_3_engaged': [rotor_3_engaged, opportunities_1x, 100.0 * float(rotor_3_engaged) / opportunities_1x],
             'rotor_4_engaged': [rotor_4_engaged, opportunities_1x, 100.0 * float(rotor_4_engaged) / opportunities_1x],
             'kpa_achieved': [kpa_achieved, opportunities_1x, 100.0 * float(kpa_achieved) / opportunities_1x],
-            'unicorn_matches': [unicorn_matches, opportunities_1x, 100.0 * float(unicorn_matches) / opportunities_1x],
+            'unicorn_matches': [unicorn_matches, finished_matches, 100.0 * float(unicorn_matches) / finished_matches],
             'average_win_score': float(winning_scores) / finished_matches,
             'average_win_margin': float(win_margins) / finished_matches,
             'average_score': float(total_scores) / (2 * finished_matches),
